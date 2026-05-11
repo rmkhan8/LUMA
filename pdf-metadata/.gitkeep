@@ -1,0 +1,32 @@
+# PDF Metadata Files
+
+This directory contains JSON metadata files for each PDF in the `/pdfs/` directory.
+
+## File Structure
+
+Each metadata file corresponds to a PDF file with the same base name:
+
+```
+pdfs/my-document.pdf       →  pdf-metadata/my-document.json
+pdfs/user-guide-v2.pdf     →  pdf-metadata/user-guide-v2.json
+```
+
+## Metadata Template
+
+```json
+{
+  "title": "Document Title",
+  "description": "Brief description",
+  "filename": "document-name.pdf",
+  "path": "pdfs/document-name.pdf",
+  "size_kb": 1000,
+  "created_date": "2026-05-11",
+  "tags": ["tag1", "tag2", "tag3"],
+  "summary": "One or two sentence summary",
+  "key_points": ["Point 1", "Point 2", "Point 3"],
+  "author": "Author Name",
+  "version": "1.0"
+}
+```
+
+See [PDF_MANAGEMENT.md](../docs/PDF_MANAGEMENT.md) for complete documentation.
